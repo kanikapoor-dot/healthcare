@@ -1,0 +1,21 @@
+.patientrecords {
+    width: 100%;
+    margin-top: 60px;  
+}
+
+.searchpatientrecords{
+    width: 50%;
+    margin: 10px auto ;
+}
+
+.searchpatientrecords > input{
+    border-bottom: rgb(184, 49, 189) 1px solid;
+    color: black;
+}
+
+.patientrecordcontent {
+    width: 80%;
+    margin: 10px auto ;
+    background-color: rgb(247, 196, 240);
+}
+

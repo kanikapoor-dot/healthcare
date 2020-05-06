@@ -1,0 +1,39 @@
+.myHeader {
+    background-image: linear-gradient(to right,tomato,rgb(180, 61, 180),rgb(38, 38, 143));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 7;
+    top: 0;
+
+}
+
+.navbar > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}
+
+
+li {
+    float: left;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.link-style {
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+.link-style:hover {
+    color: blue;
+    background-color: whitesmoke;
+}

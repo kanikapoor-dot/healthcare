@@ -1,0 +1,59 @@
+
+.batchDiv {
+    width: 300px;
+    height: auto;
+    display: flex;
+    background-color: rgba(20, 19, 19,.9);
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px  rgb(99, 58, 58);
+    margin: 10px;
+}
+
+.batchDiv >  hr {
+    border: 1px solid rgb(206, 206, 211);
+}
+
+.batchDiv > h3 {
+    color: rgb(36, 115, 146);
+    margin: 5px 5px 0px;
+}
+
+
+.batchDiv > p {
+    padding: 5px;
+}
+
+.em {
+    font-weight: bold;
+    margin: 0px 5px 10px;
+    color: grey;
+}
+
+.spec {
+    color: rgb(49, 165, 64);
+    margin: 5px 5px 0px;
+    font-weight: bold;
+}
+
+.hosp {
+    color: rgb(214, 219, 214);
+    font-weight: bold;
+    text-align: center;
+}
+
+.addre {
+    color: rgb(214, 219, 214);
+    text-align: justify;
+}
+
+.get-appoin {
+    width: 40%;
+    margin-left: auto;
+    background-color: crimson;
+    color: whitesmoke;
+    padding: 5px;
+    border: none;
+
+}

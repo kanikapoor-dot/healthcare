@@ -1,0 +1,21 @@
+
+
+.doctorrecords {
+    width: 100%;
+    margin-top: 60px;  
+}
+
+.searchdoctorrecords{
+    width: 50%;
+    margin: 10px auto ;
+}
+
+.searchdoctorrecords > input{
+    border-bottom: rgb(184, 49, 189) 1px solid;
+    color: black;
+}
+
+.doctorrecordcontent {
+    width: 80%;
+    margin: 10px auto ;
+}

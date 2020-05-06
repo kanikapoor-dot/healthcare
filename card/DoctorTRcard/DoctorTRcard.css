@@ -1,0 +1,36 @@
+.bd {
+    box-shadow: 0px 1px 1px rgb(184, 49, 189);
+    padding: 20px;
+}
+
+
+.bdiv{
+   display : flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: rgb(184, 49, 189);
+   align-items: center;
+   margin: 2px auto;
+   padding: 5px 20px;
+   color: whitesmoke;
+   box-shadow: 0px 8px 16px 0px rgb(87, 84, 84,.3);
+}
+.bdiv > h5{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.bdiv > .patientrecdel {
+    background-color: whitesmoke;
+    border:none;
+    font-size: large;
+    padding:5px;
+    color:rebeccapurple;
+    border: 2px solid rebeccapurple;
+    border-radius: 8px;
+}
+
+
+.baba{
+    width:100%;
+}

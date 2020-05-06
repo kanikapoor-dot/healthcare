@@ -1,0 +1,12 @@
+
+ .bdiv > .doctorrecdel {
+     background-color: blueviolet;
+     border:none;
+     font-size: large;
+     padding:5px;
+     color:whitesmoke;
+     border: 2px solid rebeccapurple;
+     border-radius: 8px;
+ }
+ 
+
