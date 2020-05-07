@@ -1,10 +1,10 @@
 .uploadfiles {
-    width: 50%;
+    width: 70%;
     margin: 10px auto;
 }
 
 .showrecords{
-    width: 100%;
+    width: 90%;
     height: 250px;
     background-color: whitesmoke;
     display: flex;
@@ -13,24 +13,31 @@
     padding: 20px;
     overflow: scroll;
     overflow-x: hidden;
+    margin: 0px auto;
 }
 
 .uploaddiv {
     display: flex;
     flex-direction: row;
     background-color: violet;
+    width: 100%;
+}
+.uploaddiv > .uploadInput{
+    width: 30%;
 }
 
-.uploaddiv > .uploadInput {
-    width: 80%;
+.uploaddiv > .description {
+    display: inline-block;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .uploaddiv > .uplbut {
     display: inline-block;
-    width: 20%;
     font-size: larger;
     background-color: whitesmoke;
     color: rgb(99, 40, 99);
     border: none;
-    margin:5px;
+    margin:10px 5px;
+    padding: 5px;
 }

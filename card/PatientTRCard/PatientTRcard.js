@@ -20,7 +20,7 @@ class PatientTRcard extends React.Component{
             <div className="bd">
             <div className="bdiv">
                 <h5>{this.props.doctors.doctorid}</h5>
-                <button className="doctorrecdel" onClick={this.showcon.bind(this)}>Conversation</button>
+                <button className="doctorrecdel" onClick={this.showcon.bind(this)}>Details</button>
              </div>
              <div className="baba" style={{display: this.state.showconver ? 'block' : 'none'}}><UploadFiles  doctors={this.props.doctors}/></div> 
             </div>         

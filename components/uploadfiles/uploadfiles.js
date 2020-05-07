@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import firebase from "../firebase";
 import "./uploadfiles.css";
 import UploadLists from "./UploadLIsts";
-
+let counter = 0;
 class UploadFiles extends Component {
   constructor(props) {
     super(props);
@@ -11,6 +11,7 @@ class UploadFiles extends Component {
       data: this.props.patients ? this.props.patients : this.props.doctors,
       downloadUrl: null,
       uploadedFiles: [],
+      description: "",
     };
   }
 
@@ -37,7 +38,7 @@ class UploadFiles extends Component {
       .then((res) => {
         if (res) {
           res.forEach((element) => {
-            const newTemp = <UploadLists key={element} datas={element} />;
+            const newTemp = <UploadLists key={counter++} datas={element} />;
             temp.push(newTemp);
           });
           this.setState({ uploadedFiles: temp });
@@ -71,8 +72,8 @@ class UploadFiles extends Component {
       // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
       var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       console.log("Upload is " + progress + "% done");
-      if(progress == 100){
-        alert("uploaded successfully")
+      if (progress === 100) {
+        alert("uploaded successfully");
       }
     });
 
@@ -86,7 +87,8 @@ class UploadFiles extends Component {
       doctorid: data.doctorid,
       downloadUrl: path,
       filename: files[0].name,
-      upbyhome: localStorage.getItem('usertype') == 'patient' ? "patient" : "Doctor",
+      upbyhome: localStorage.getItem("usertype") === "patient" ? "patient" : "doctor",
+      description: this.state.description,
     });
 
     fetch("http://localhost:4000/record_upload", {
@@ -116,6 +118,15 @@ class UploadFiles extends Component {
             className="uploadInput"
             onChange={(e) => {
               this.handleChange(e.target.files);
+            }}
+          />
+          <input
+            type="text"
+            className="description"
+            type="description"
+            placeholder="Type Description"
+            onChange={(e) => {
+              this.setState({ description: e.target.value });
             }}
           />
           <button className="uplbut" onClick={this.handlesave}>

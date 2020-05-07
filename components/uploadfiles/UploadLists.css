@@ -1,9 +1,23 @@
-.typeuser {
+.uploadList {
+    width: 100%;
+}
+.typeuser{
+    display: inline-flex;
+    width: 100%;
+}
+.descr {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 10px;
+    width: 70%;
+    color: grey;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.typeuser > button {
-    padding: 5px;
-    margin: 10px;
+.descr > button {
+    color: rgb(59, 52, 52);
+    width: 80%;
+    padding: 10px;
 }

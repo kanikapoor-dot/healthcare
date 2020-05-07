@@ -22,7 +22,7 @@ render(){
         <div className="bdiv">
             <h3>{this.props.patients.patient_name}</h3>
             <h5>{this.props.patients.patientid}</h5>
-            <button className="patientrecdel" onClick={this.showcon.bind(this)}>Conversation</button>
+            <button className="patientrecdel" onClick={this.showcon.bind(this)}>Details</button>
          </div>
          <div className="baba" style={{display: this.state.showconver ? 'block' : 'none'}}><UploadFiles  patients={this.props.patients}/></div> 
         </div> 
